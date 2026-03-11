@@ -34,7 +34,7 @@ window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
 revealOnScroll();
 
-/* 3D tilt effect */
+/* soft 3D tilt */
 const tiltCards = document.querySelectorAll(".tilt-card");
 
 tiltCards.forEach((card) => {
@@ -46,13 +46,15 @@ tiltCards.forEach((card) => {
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
 
-    const rotateX = ((y - centerY) / centerY) * -6;
-    const rotateY = ((x - centerX) / centerX) * 6;
+    const rotateX = ((y - centerY) / centerY) * -5;
+    const rotateY = ((x - centerX) / centerX) * 5;
 
-    card.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-3px)`;
+    card.style.transform =
+      `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
   });
 
   card.addEventListener("mouseleave", () => {
-    card.style.transform = "perspective(900px) rotateX(0deg) rotateY(0deg) translateY(0)";
+    card.style.transform =
+      "perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)";
   });
 });
