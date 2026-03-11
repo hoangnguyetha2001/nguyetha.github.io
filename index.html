@@ -1,180 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hoang Nguyet Ha | Portfolio</title>
+  <meta
+    name="description"
+    content="Creative portfolio of Hoang Nguyet Ha - Accounting & Auditing ACCA student, aspiring auditor, tutor, dancer, and K-pop cover team member."
+  />
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<title>Hoang Nguyet Ha | Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+    rel="stylesheet"
+  />
 
-<link rel="stylesheet" href="stylesheet.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="stylesheet.css" />
 </head>
-
 <body>
+  <div class="page-blur blur-1"></div>
+  <div class="page-blur blur-2"></div>
+  <div class="page-blur blur-3"></div>
+  <div class="grid-overlay"></div>
 
-<header>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo">Hoang Nguyet Ha</a>
 
-<div class="nav">
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-<h2>Hoang Nguyet Ha</h2>
+      <nav class="site-nav" id="siteNav">
+        <a href="#about">About</a>
+        <a href="#identity">Identity</a>
+        <a href="#skills">Skills</a>
+        <a href="#journey">Journey</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#journey">Journey</a>
-<a href="#activities">Activities</a>
-<a href="#contact">Contact</a>
-</nav>
+  <main>
+    <section class="section hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Creative • Professional • Personal</p>
 
-</div>
+          <div class="hero-avatar-wrap">
+            <div class="avatar-decor decor-star">✦</div>
+            <div class="avatar-decor decor-heart">♡</div>
+            <div class="avatar-ring">
+              <img src="images/1.jpg" alt="Hoang Nguyet Ha avatar" class="hero-avatar" />
+            </div>
+          </div>
 
-</header>
+          <h1 class="hero-title">
+            Hoang
+            <span class="script-name">Nguyet Ha</span>
+          </h1>
 
+          <p class="hero-role">
+            Accounting & Auditing (ACCA-Oriented Advanced Program) Student
+            at Foreign Trade University
+          </p>
 
-<section class="hero">
+          <p class="hero-text">
+            I am an introverted but active student who values discipline,
+            responsibility, and long-term growth. I aspire to become a
+            <strong>professional auditor</strong> while continuing to grow as
+            a positive, proactive, and responsible person.
+          </p>
 
-<img src="images/1.jpg" class="avatar" alt="Hoang Nguyet Ha">
+          <div class="hero-tags">
+            <span>Foreign Trade University</span>
+            <span>Aspiring Auditor</span>
+            <span>Youth Union Secretary</span>
+            <span>Party Member</span>
+            <span>CFAA Member</span>
+            <span>KDC K-pop Cover Team</span>
+          </div>
 
-<h1>Hoang <span>Nguyet Ha</span></h1>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            <a href="#highlights" class="btn btn-secondary">View Highlights</a>
+          </div>
+        </div>
 
-<p class="subtitle">
-Accounting & Auditing (ACCA) Student – Foreign Trade University
-</p>
+        <div class="hero-side reveal">
+          <div class="hero-card main-card float-y">
+            <p class="card-label">Future Goal</p>
+            <h3>Becoming a trusted auditor</h3>
+            <p>
+              I want to build a career based on integrity, analytical thinking,
+              precision, and responsibility.
+            </p>
+          </div>
 
-<p class="description">
-An introverted but active student with strong academic dedication,
-leadership experience, and creative energy.
-</p>
+          <div class="hero-card sub-card tilt-a">
+            <p class="card-label">Creative Side</p>
+            <h3>Dancing & K-pop Cover</h3>
+            <p>
+              I have a talent for dancing and I am a member of the
+              Korean Discovery Club (KDC) K-pop Cover Team.
+            </p>
+          </div>
 
-</section>
+          <div class="hero-card sub-card tilt-b">
+            <p class="card-label">Personal Energy</p>
+            <h3>Positive & Proactive</h3>
+            <p>
+              I always try to learn, improve, and contribute with sincerity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>Quiet in personality, active in effort</h2>
+          <p>
+            A personal profile shaped by academic commitment, responsibility,
+            leadership, and creative self-expression.
+          </p>
+        </div>
 
-<section id="about">
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <div class="photo-frame">
+              <img src="images/1.jpg" alt="Hoang Nguyet Ha portrait" />
+            </div>
+          </div>
 
-<h2>About Me</h2>
+          <div class="about-content reveal">
+            <div class="glass-card">
+              <h3>Profile</h3>
+              <p>
+                My name is <strong>Hoang Nguyet Ha</strong>, born in <strong>2006</strong>.
+                I come from <strong>Ha Nam</strong> and currently live in
+                <strong>Phao Dai Lang, Hanoi</strong>.
+              </p>
+              <p>
+                I am currently studying <strong>Accounting & Auditing</strong> under the
+                <strong>ACCA-Oriented Advanced Program</strong> at
+                <strong>Foreign Trade University</strong>.
+              </p>
+            </div>
 
-<p>
-My name is Hoang Nguyet Ha, born in 2006.
-I come from Ha Nam and currently live in Phao Dai Lang, Hanoi.
-</p>
+            <div class="glass-card">
+              <h3>How I See Myself</h3>
+              <p>
+                I am naturally introverted, but I believe quiet people can still
+                carry strong responsibility, warmth, and positive energy.
+                I enjoy thoughtful work, meaningful contribution, and doing things carefully.
+              </p>
+            </div>
 
-<p>
-I study Accounting & Auditing (ACCA-Oriented Program)
-at Foreign Trade University.
-</p>
+            <div class="info-pills">
+              <span>From Ha Nam</span>
+              <span>Living in Hanoi</span>
+              <span>Specialized in Literature</span>
+              <span>Tutor</span>
+              <span>Positive mindset</span>
+              <span>Disciplined</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<p>
-Although I am introverted, I actively participate in
-academic, leadership and extracurricular activities.
-</p>
+    <section class="section" id="identity">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Identity</p>
+          <h2>More than academics: leadership, creativity, and responsibility</h2>
+          <p>
+            I want my portfolio to reflect not only achievement, but also my values and personality.
+          </p>
+        </div>
 
-</section>
+        <div class="identity-grid">
+          <article class="identity-card reveal card-soft">
+            <h3>Leadership & Collective Work</h3>
+            <p>
+              I currently serve as a <strong>Youth Union Secretary</strong>, am a
+              <strong>Party member</strong>, and a member of
+              <strong>CFAA – Future Auditors & Accountants Club</strong>.
+            </p>
+          </article>
 
+          <article class="identity-card reveal card-pink">
+            <h3>Creative Expression</h3>
+            <p>
+              I have a natural talent for <strong>dancing</strong> and I am a member of the
+              <strong>Korean Discovery Club (KDC) K-pop Cover Team</strong>.
+            </p>
+          </article>
 
-<section id="skills">
+          <article class="identity-card reveal card-blue">
+            <h3>Professional Direction</h3>
+            <p>
+              My long-term orientation is to become an <strong>auditor</strong> —
+              someone who works with precision, ethics, and accountability.
+            </p>
+          </article>
 
-<h2>Skills</h2>
+          <article class="identity-card reveal card-lavender">
+            <h3>Personal Attitude</h3>
+            <p>
+              I always try to be a <strong>positive and proactive person</strong>.
+              I value growth, consistency, and learning through every experience.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<div class="skill-box">
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>A blend of academic focus, communication, and expression</h2>
+          <p>
+            My strengths come from both structured study and active participation.
+          </p>
+        </div>
 
-<span>Accounting</span>
-<span>Analytical Thinking</span>
-<span>Literature Tutoring</span>
-<span>English Tutoring</span>
-<span>Communication</span>
-<span>Leadership</span>
-<span>Dancing</span>
+        <div class="skills-grid">
+          <div class="skill-panel reveal">
+            <h3>Academic & Professional</h3>
 
-</div>
+            <div class="skill-line">
+              <span>Accounting Foundation</span>
+              <div class="bar"><i style="width: 86%"></i></div>
+            </div>
 
-</section>
+            <div class="skill-line">
+              <span>Auditing-Oriented Thinking</span>
+              <div class="bar"><i style="width: 82%"></i></div>
+            </div>
 
+            <div class="skill-line">
+              <span>Analytical Writing</span>
+              <div class="bar"><i style="width: 90%"></i></div>
+            </div>
 
-<section id="journey">
+            <div class="skill-line">
+              <span>Presentation & Organization</span>
+              <div class="bar"><i style="width: 88%"></i></div>
+            </div>
+          </div>
 
-<h2>Academic Journey</h2>
+          <div class="skill-panel reveal">
+            <h3>Teaching & Communication</h3>
 
-<div class="timeline">
+            <div class="skill-line">
+              <span>Literature Tutoring</span>
+              <div class="bar"><i style="width: 92%"></i></div>
+            </div>
 
-<div class="item">
-<h3>Foreign Trade University</h3>
-<p>Accounting & Auditing – ACCA Program</p>
-</div>
+            <div class="skill-line">
+              <span>Basic English Tutoring</span>
+              <div class="bar"><i style="width: 80%"></i></div>
+            </div>
 
-<div class="item">
-<h3>Bien Hoa High School for the Gifted</h3>
-<p>Specialized in Literature</p>
-</div>
+            <div class="skill-line">
+              <span>One-on-One Guidance</span>
+              <div class="bar"><i style="width: 89%"></i></div>
+            </div>
 
-<div class="item">
-<h3>Achievements</h3>
-<p>Second Prize – Provincial Excellent Student Competition (Grade 11)</p>
-<p>Third Prize – Provincial Excellent Student Competition (Grades 9,10,12)</p>
-<p>Participated in National Excellent Student Competition (Grade 12)</p>
-</div>
+            <div class="skill-line">
+              <span>Clear Communication</span>
+              <div class="bar"><i style="width: 87%"></i></div>
+            </div>
+          </div>
+        </div>
 
-</div>
+        <div class="skill-cloud reveal">
+          <span>Discipline</span>
+          <span>Responsibility</span>
+          <span>Leadership</span>
+          <span>Teamwork</span>
+          <span>Dancing</span>
+          <span>Creativity</span>
+          <span>Positive Energy</span>
+          <span>Adaptability</span>
+          <span>Self-expression</span>
+          <span>Consistency</span>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <section class="section" id="journey">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Journey</p>
+          <h2>Academic and personal milestones that shaped me</h2>
+          <p>
+            A timeline that reflects achievement, growth, and identity.
+          </p>
+        </div>
 
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-time">Present</span>
+              <h3>Foreign Trade University</h3>
+              <p>
+                Student in the <strong>Accounting & Auditing (ACCA-Oriented Advanced Program)</strong>.
+              </p>
+              <p>
+                Currently active as <strong>Youth Union Secretary</strong>,
+                <strong>Party member</strong>, and <strong>CFAA member</strong>.
+              </p>
+            </div>
+          </div>
 
-<section id="activities">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-time">High School Years</span>
+              <h3>Bien Hoa High School for the Gifted</h3>
+              <p>
+                Specialized in <strong>Literature</strong>, where I developed strong foundations
+                in language, critical thinking, expression, and disciplined study.
+              </p>
+            </div>
+          </div>
 
-<h2>Activities & Identity</h2>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-time">Academic Achievements</span>
+              <h3>Literature Competition Journey</h3>
+              <p>
+                Participated in the <strong>National Excellent Student Competition in Literature</strong> in grade 12.
+              </p>
+              <p>
+                Received <strong>Second Prize</strong> in the Provincial Excellent Student Competition in grade 11,
+                and <strong>Third Prize</strong> in grades 9, 10, and 12.
+              </p>
+            </div>
+          </div>
 
-<div class="cards">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-time">Creative Development</span>
+              <h3>Dancing & K-pop Cover Team</h3>
+              <p>
+                Dancing has helped me build confidence, stage presence, creativity,
+                and a stronger sense of self-expression.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="card">
-<h3>Leadership</h3>
-<p>
-Youth Union Secretary, Party Member,
-member of CFAA – Future Auditors & Accountants Club.
-</p>
-</div>
+    <section class="section" id="highlights">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Highlights</p>
+          <h2>Selected experiences that represent who I am</h2>
+          <p>
+            These highlights combine academics, tutoring, activity, and personal identity.
+          </p>
+        </div>
 
-<div class="card">
-<h3>Dancing</h3>
-<p>
-Member of Korean Discovery Club (KDC)
-K-pop Cover Team. Dance is my creative expression.
-</p>
-</div>
+        <div class="highlight-grid">
+          <article class="highlight-card reveal">
+            <div class="highlight-top pink-top"></div>
+            <div class="highlight-content">
+              <h3>Literature Tutoring</h3>
+              <p>
+                Designed personalized study support to help students improve reading,
+                writing structure, and confidence in Literature.
+              </p>
+            </div>
+          </article>
 
-<div class="card">
-<h3>Future Goal</h3>
-<p>
-To become a professional auditor with strong
-analytical thinking and integrity.
-</p>
-</div>
+          <article class="highlight-card reveal">
+            <div class="highlight-top blue-top"></div>
+            <div class="highlight-content">
+              <h3>Club & Collective Activities</h3>
+              <p>
+                Built practical experience in teamwork, organization, responsibility,
+                and contribution through student and club activities.
+              </p>
+            </div>
+          </article>
 
-</div>
+          <article class="highlight-card reveal">
+            <div class="highlight-top lavender-top"></div>
+            <div class="highlight-content">
+              <h3>Dancing & K-pop Cover</h3>
+              <p>
+                Strengthened creativity, confidence, and stage expression through
+                dance and participation in the KDC K-pop Cover Team.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-wrap reveal">
+          <div class="contact-left">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s connect with sincerity and ambition</h2>
+            <p>
+              I hope to continue growing into a capable auditor and a positive,
+              responsible person who contributes meaningfully wherever I go.
+            </p>
+          </div>
 
+          <div class="contact-right">
+            <div class="contact-card-big">
+              <p><strong>Full Name:</strong> Hoang Nguyet Ha</p>
+              <p><strong>Phone:</strong> 0965680807</p>
+              <p><strong>Hometown:</strong> Ha Nam</p>
+              <p><strong>Current Address:</strong> Phao Dai Lang, Hanoi</p>
+              <p><strong>Major:</strong> Accounting & Auditing ACCA</p>
+              <p><strong>Orientation:</strong> Aspiring Auditor</p>
+              <p><strong>Extra Identity:</strong> Dancer & KDC K-pop Cover Team Member</p>
+              <a href="tel:0965680807" class="btn btn-primary">Call Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<section id="contact">
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 Hoang Nguyet Ha</p>
+      <p>Creative portfolio with a soft-editorial aesthetic</p>
+    </div>
+  </footer>
 
-<h2>Contact</h2>
-
-<p><strong>Name:</strong> Hoang Nguyet Ha</p>
-<p><strong>Phone:</strong> 0965680807</p>
-<p><strong>Hometown:</strong> Ha Nam</p>
-<p><strong>Address:</strong> Phao Dai Lang, Hanoi</p>
-
-</section>
-
-
-<footer>
-
-<p>© 2026 Hoang Nguyet Ha</p>
-
-</footer>
-
-
+  <script src="script.js"></script>
 </body>
 </html>
