@@ -191,6 +191,12 @@ a {
   position: relative;
 }
 
+.hero-avatar-zone {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 18px;
+}
+
 .hero-sticker {
   position: absolute;
   background: var(--white-strong);
@@ -200,17 +206,18 @@ a {
   padding: 10px 14px;
   font-size: 0.82rem;
   font-weight: 800;
+  white-space: nowrap;
 }
 
-.sticker-1 {
-  top: 8px;
-  left: 10%;
+.sticker-left {
+  top: 12px;
+  left: -135px;
   transform: rotate(-6deg);
 }
 
-.sticker-2 {
-  top: 42px;
-  right: 10%;
+.sticker-right {
+  top: 20px;
+  right: -138px;
   transform: rotate(6deg);
 }
 
@@ -234,7 +241,7 @@ a {
 .hero-avatar-wrap {
   position: relative;
   width: fit-content;
-  margin: 0 auto 22px;
+  margin: 0 auto;
   transform-style: preserve-3d;
 }
 
@@ -248,9 +255,9 @@ a {
 }
 
 .avatar-ring {
-  width: 138px;
-  height: 138px;
-  padding: 6px;
+  width: 180px;
+  height: 180px;
+  padding: 7px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--pink), var(--blue), var(--lavender));
   box-shadow: var(--shadow-strong);
@@ -265,24 +272,22 @@ a {
   border: 5px solid white;
 }
 
-.float-tag {
-  position: absolute;
+.avatar-labels {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.avatar-label {
   background: var(--white-strong);
   box-shadow: var(--shadow);
   border-radius: 999px;
-  padding: 8px 12px;
-  font-size: 0.75rem;
+  padding: 8px 14px;
+  font-size: 0.78rem;
   font-weight: 800;
-}
-
-.tag-1 {
-  top: -8px;
-  right: -24px;
-}
-
-.tag-2 {
-  bottom: 6px;
-  left: -22px;
+  white-space: nowrap;
 }
 
 .hero-name {
@@ -488,8 +493,7 @@ a {
 
 .education-grid,
 .skills-grid,
-.future-grid,
-.gallery-grid {
+.future-grid {
   display: grid;
   gap: 22px;
 }
@@ -507,15 +511,10 @@ a {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.gallery-grid {
-  grid-template-columns: repeat(3, 1fr);
-}
-
 /* IMAGE CARDS */
 .image-card,
 .edu-card,
-.achievement-card,
-.gallery-card {
+.achievement-card {
   overflow: hidden;
 }
 
@@ -531,18 +530,6 @@ a {
 
 .edu-card img,
 .achievement-card img {
-  height: 260px;
-  object-fit: cover;
-}
-
-.gallery-card {
-  background: var(--white-glass);
-  border: 1px solid rgba(255,255,255,0.8);
-  box-shadow: var(--shadow);
-  border-radius: 22px;
-}
-
-.gallery-card img {
   height: 260px;
   object-fit: cover;
 }
@@ -726,9 +713,20 @@ a {
   .education-grid,
   .skills-grid,
   .future-grid,
-  .project-achievement-grid,
-  .gallery-grid {
+  .project-achievement-grid {
     grid-template-columns: 1fr;
+  }
+
+  .sticker-left,
+  .sticker-right {
+    position: static;
+    display: inline-flex;
+    margin: 0 6px 10px;
+    transform: none;
+  }
+
+  .hero-avatar-zone {
+    text-align: center;
   }
 }
 
@@ -775,7 +773,8 @@ a {
   .hero-actions,
   .contact-socials,
   .social-links,
-  .contact-actions {
+  .contact-actions,
+  .avatar-labels {
     justify-content: center;
   }
 
@@ -785,11 +784,10 @@ a {
   }
 
   .avatar-ring {
-    width: 132px;
-    height: 132px;
+    width: 155px;
+    height: 155px;
   }
 
-  .float-tag,
   .hero-sticker {
     display: none;
   }
