@@ -9,24 +9,19 @@
   --bg-2: #fff2f8;
   --text: #22304b;
   --muted: #68778f;
-
   --pink: #f58db7;
   --pink-dark: #dd5f98;
   --blue: #8caeff;
   --lavender: #d5c5ff;
   --peach: #ffd8c8;
-
   --white-glass: rgba(255, 255, 255, 0.72);
   --white-strong: rgba(255, 255, 255, 0.88);
   --line: rgba(34, 48, 75, 0.1);
-
   --shadow: 0 20px 60px rgba(94, 105, 132, 0.16);
-
   --radius-xl: 36px;
   --radius-lg: 28px;
   --radius-md: 20px;
   --radius-sm: 14px;
-
   --container: 1180px;
 }
 
@@ -134,7 +129,6 @@ a {
 .logo {
   font-weight: 800;
   font-size: 1.3rem;
-  letter-spacing: 0.2px;
 }
 
 .site-nav {
@@ -223,7 +217,6 @@ a {
   font-size: clamp(1.05rem, 1.8vw, 1.35rem);
   font-weight: 700;
   margin-bottom: 16px;
-  color: var(--text);
 }
 
 .hero-text {
@@ -662,13 +655,20 @@ a {
   font-size: 0.95rem;
 }
 
+/* Safe reveal: visible by default */
 .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+/* Only animate if JS is running */
+.js .reveal {
   opacity: 0;
   transform: translateY(38px);
   transition: opacity 0.85s ease, transform 0.85s ease;
 }
 
-.reveal.active {
+.js .reveal.active {
   opacity: 1;
   transform: translateY(0);
 }
