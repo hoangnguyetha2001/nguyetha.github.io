@@ -46,15 +46,15 @@ tiltCards.forEach((card) => {
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
 
-    const rotateX = ((y - centerY) / centerY) * -5;
-    const rotateY = ((x - centerX) / centerX) * 5;
+    const rotateX = ((y - centerY) / centerY) * -4;
+    const rotateY = ((x - centerX) / centerX) * 4;
 
     card.style.transform =
-      `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+      `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px) scale(1.01)`;
   });
 
   card.addEventListener("mouseleave", () => {
     card.style.transform =
-      "perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)";
+      "perspective(1200px) rotateX(0deg) rotateY(0deg) translateY(0) scale(1)";
   });
 });
